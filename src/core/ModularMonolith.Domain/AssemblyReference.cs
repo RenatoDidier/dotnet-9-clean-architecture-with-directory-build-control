@@ -1,7 +1,7 @@
-﻿namespace ModularMonolith.Domain
-{
-    public class AssemblyReference
-    {
+﻿namespace ModularMonolith.Domain;
 
-    }
+
+public class AssemblyReference
+{
+
 }
