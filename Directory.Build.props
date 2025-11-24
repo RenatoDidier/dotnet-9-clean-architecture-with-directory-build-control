@@ -1,4 +1,7 @@
 <Project>
+
+    <Import Project="Directory.Build.Reference.props" />
+
     <PropertyGroup>
         <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
     </PropertyGroup>

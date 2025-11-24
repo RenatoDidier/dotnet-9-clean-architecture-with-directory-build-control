@@ -1,0 +1,20 @@
+<Project>
+
+    <PropertyGroup>
+        <RootPath Condition="'$(RootPath)' == '' Or !HasTrailingSlash('$(RootPath)')">$(MSBuildThisFileDirectory)</RootPath>
+        <CorePath Condition="'$(CorePath)' == '' Or !HasTrailingSlash('$(CorePath)')">$(RootPath)src/core</CorePath>
+        <ExternalPath Condition="'$(ExternalPath)' == '' Or !HasTrailingSlash('$(ExternalPath)')">$(RootPath)src/external</ExternalPath>
+    </PropertyGroup>
+
+    <ItemGroup Condition=" $(MSBuildProjectName.EndsWith('.Application')) ">
+        <ProjectReference Include="$(CorePath)\ModularMonolith.Domain\ModularMonolith.Domain.csproj" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(MSBuildProjectName.EndsWith('.Infrastructure')) ">
+        <ProjectReference Include="$(CorePath)\ModularMonolith.Application\ModularMonolith.Application.csproj" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(MSBuildProjectName.EndsWith('.API')) ">
+        <ProjectReference Include="$(CorePath)\ModularMonolith.Application\ModularMonolith.Application.csproj" />
+        <ProjectReference Include="$(ExternalPath)\ModularMonolith.Infrastructure\ModularMonolith.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

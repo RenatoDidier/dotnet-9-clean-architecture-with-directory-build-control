@@ -39,6 +39,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eng", "eng", "{3C1B5534-AC6
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{DFDBE962-7B2A-498D-B0E6-3D296A538199}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.Reference.props = Directory.Build.Reference.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +101,7 @@ Global
 		{F8F12821-35CF-49C8-BD7F-BE3700876600} = {AC734FBE-BA93-47DF-9F04-D36A673EFD7A}
 		{618BD045-5C0E-4FAE-8375-D0BA979528FD} = {2ECACE06-E42E-4692-BB52-37C7331AAE9C}
 		{17DF0568-BA43-4FCE-959F-4C34713B76E2} = {2ECACE06-E42E-4692-BB52-37C7331AAE9C}
+		{DFDBE962-7B2A-498D-B0E6-3D296A538199} = {3C1B5534-AC6C-4BC6-AC8A-3F0A07456062}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B8A83A4-06E6-43FC-BEF8-A4D0743ABFF8}
