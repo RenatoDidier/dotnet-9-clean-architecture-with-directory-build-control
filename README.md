@@ -1,1 +1,0 @@
-# dotnet-9-modular-monolith-with-directory-build-control
